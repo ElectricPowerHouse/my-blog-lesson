@@ -7,7 +7,10 @@ import AboutPage from './pages/AboutPage';
 import ColorsList from './pages/ColorsList';
 import ArticlesListPage from './pages/ArticlesListPage';
 import ArticlePage from './pages/ArticlePage';
-import NotFoundPage from './pages/NotFoundPage'
+import NotFoundPage from './pages/NotFoundPage';
+import CreateAccountPage from './pages/CreateAccountPage';
+import LoginPage from './pages/LoginPage';
+
 
 function App() {
   return (<BrowserRouter>
@@ -18,8 +21,10 @@ function App() {
           <Route path="/" element={<HomePage/>}/>
           <Route path="/about" element={<AboutPage/>}/>
           <Route path="/articles" element={<ArticlesListPage/>}/>
-          <Route path="/colors-list" element={<ColorsList/>}/>
+          <Route path="/colors-list" element={<ColorsList />}/>
           <Route path="/articles/:articleId" element={<ArticlePage/>}/>
+          <Route path="/login" element={<LoginPage/>}/>
+          <Route path="/create-account" element={<CreateAccountPage/>}/>
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
